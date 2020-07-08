@@ -284,6 +284,7 @@
 		30F8105F1AEF9709008B7857 /* GKDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDateCell.h; sourceTree = "<group>"; };
 		30F810601AEF9709008B7857 /* GKDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDateCell.m; sourceTree = "<group>"; };
 		30FEF09C2292ADE300B10B39 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Images/Icons.xcassets; sourceTree = "<group>"; };
+		CC253DAA24B66A5000791460 /* GPG Keychain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GPG Keychain.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +320,7 @@
 		3052E0FF144B016300D6716A = {
 			isa = PBXGroup;
 			children = (
+				CC253DAA24B66A5000791460 /* GPG Keychain.entitlements */,
 				3014396917732F800088B59F /* Libmacgpg.xcodeproj */,
 				3092C3BE20A1C4150071F648 /* Zxcvbn.xcodeproj */,
 				3052E15E144B01EC00D6716A /* Classes */,
@@ -932,8 +934,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "GPG Keychain.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Dependencies/Libmacgpg/build/$(CONFIGURATION)\"",
 					"\"$(SRCROOT)/Dependencies/Zxcvbn/build/$(CONFIGURATION)\"",
@@ -961,8 +964,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "GPG Keychain.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Dependencies/Libmacgpg/build/$(CONFIGURATION)\"",
 					"\"$(SRCROOT)/Dependencies/Zxcvbn/build/$(CONFIGURATION)\"",
@@ -1027,8 +1031,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "GPG Keychain.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Dependencies/Libmacgpg/build/$(CONFIGURATION)\"",
 					"\"$(SRCROOT)/Dependencies/Zxcvbn/build/$(CONFIGURATION)\"",
